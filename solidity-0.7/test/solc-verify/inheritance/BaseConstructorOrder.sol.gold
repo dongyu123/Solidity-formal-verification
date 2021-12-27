@@ -1,0 +1,7 @@
+BCO_A::set: OK
+BCO_A::[constructor]: OK
+BCO_B1::[constructor]: OK
+BCO_B2::[constructor]: OK
+BaseConstructorOrder::[constructor]: OK
+BaseConstructorOrder::[receive]: OK
+No errors found.

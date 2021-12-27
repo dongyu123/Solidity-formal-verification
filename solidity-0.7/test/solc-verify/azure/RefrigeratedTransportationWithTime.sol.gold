@@ -1,0 +1,5 @@
+RefrigeratedTransportationWithTime::[constructor]: OK
+RefrigeratedTransportationWithTime::IngestTelemetry: OK
+RefrigeratedTransportationWithTime::TransferResponsibility: OK
+RefrigeratedTransportationWithTime::Complete: OK
+No errors found.

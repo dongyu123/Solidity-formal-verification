@@ -1,0 +1,8 @@
+Starter::[constructor]: OK
+Starter::StartPingPong: OK
+Starter::Pong: OK
+Starter::FinishGame: OK
+Player::[constructor]: OK
+Player::Ping: OK
+Player::FinishGame: OK
+No errors found.

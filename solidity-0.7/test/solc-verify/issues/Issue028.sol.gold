@@ -1,0 +1,6 @@
+test/solc-verify/issues/Issue028.sol:5:39: Warning: Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.
+test/solc-verify/issues/Issue028.sol:5:45: Warning: Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.
+test/solc-verify/issues/Issue028.sol:6:9: Warning: Statement has no effect.
+Issue028::f: OK
+Issue028::[implicit_constructor]: OK
+No errors found.

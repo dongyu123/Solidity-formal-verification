@@ -1,0 +1,6 @@
+StructsStorMemCopy::[constructor]: OK
+StructsStorMemCopy::storToMem: OK
+StructsStorMemCopy::memToStor: OK
+StructsStorMemCopy::checkReturnMem: OK
+StructsStorMemCopy::[receive]: OK
+No errors found.

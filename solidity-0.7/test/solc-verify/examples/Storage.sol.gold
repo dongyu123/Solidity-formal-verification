@@ -1,0 +1,7 @@
+solc-verify warning: Balance modifications due to gas consumption or miner rewards are not modeled
+Storage::[constructor]: OK
+Storage::changeOwner: OK
+Storage::set: OK
+Storage::update: OK
+Storage::clear: OK
+No errors found.

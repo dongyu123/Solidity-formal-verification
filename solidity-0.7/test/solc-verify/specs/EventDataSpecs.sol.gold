@@ -1,0 +1,12 @@
+test/solc-verify/specs/EventDataSpecs.sol:89:10: Warning: This declaration shadows an existing declaration.
+C::test_new_entry: OK
+C::test_updated_entry: ERROR
+ - test/solc-verify/specs/EventDataSpecs.sol:23:3: Function can end without triggering event
+C::test_a_b_changed: OK
+C::test_a_b_changed_wrongpost: ERROR
+ - test/solc-verify/specs/EventDataSpecs.sol:69:10: Event postcondition 'a < b' might not hold before emit a_b_changed.
+C::emit_no_data_changed: OK
+C::emit_no_data_changed_tracking: OK
+C::test_a_b_loop: OK
+C::[implicit_constructor]: OK
+Errors were found by the verifier.

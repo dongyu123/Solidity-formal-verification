@@ -1,0 +1,175 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0;
+
+/// From test/libsolidity/syntaxTests/types/cyclic_dependency_check_on_consts_good.sol
+
+contract I003_A {}
+contract Issue003 {
+    I003_A constant B = C;
+    I003_A constant C = D;
+    I003_A constant D = E;
+    I003_A constant E = F;
+    I003_A constant F = G;
+    I003_A constant G = H;
+    I003_A constant H = I;
+    I003_A constant I = J;
+    I003_A constant J = K;
+    I003_A constant K = L;
+    I003_A constant L = M;
+    I003_A constant M = N;
+    I003_A constant N = O;
+    I003_A constant O = P;
+    I003_A constant P = Q;
+    I003_A constant Q = R;
+    I003_A constant R = S;
+    I003_A constant S = T;
+    I003_A constant T = U;
+    I003_A constant U = V;
+    I003_A constant V = W;
+    I003_A constant W = X;
+    I003_A constant X = Y;
+    I003_A constant Y = Z;
+    I003_A constant Z = BA;
+    I003_A constant BA = BB;
+    I003_A constant BB = BC;
+    I003_A constant BC = BD;
+    I003_A constant BD = BE;
+    I003_A constant BE = BF;
+    I003_A constant BF = BG;
+    I003_A constant BG = BH;
+    I003_A constant BH = BI;
+    I003_A constant BI = BJ;
+    I003_A constant BJ = BK;
+    I003_A constant BK = BL;
+    I003_A constant BL = BM;
+    I003_A constant BM = BN;
+    I003_A constant BN = BO;
+    I003_A constant BO = BP;
+    I003_A constant BP = BQ;
+    I003_A constant BQ = BR;
+    I003_A constant BR = BS;
+    I003_A constant BS = BT;
+    I003_A constant BT = BU;
+    I003_A constant BU = BV;
+    I003_A constant BV = BW;
+    I003_A constant BW = BX;
+    I003_A constant BX = BY;
+    I003_A constant BY = BZ;
+    I003_A constant BZ = CA;
+    I003_A constant CA = CB;
+    I003_A constant CB = CC;
+    I003_A constant CC = CD;
+    I003_A constant CD = CE;
+    I003_A constant CE = CF;
+    I003_A constant CF = CG;
+    I003_A constant CG = CH;
+    I003_A constant CH = CI;
+    I003_A constant CI = CJ;
+    I003_A constant CJ = CK;
+    I003_A constant CK = CL;
+    I003_A constant CL = CM;
+    I003_A constant CM = CN;
+    I003_A constant CN = CO;
+    I003_A constant CO = CP;
+    I003_A constant CP = CQ;
+    I003_A constant CQ = CR;
+    I003_A constant CR = CS;
+    I003_A constant CS = CT;
+    I003_A constant CT = CU;
+    I003_A constant CU = CV;
+    I003_A constant CV = CW;
+    I003_A constant CW = CX;
+    I003_A constant CX = CY;
+    I003_A constant CY = CZ;
+    I003_A constant CZ = DA;
+    I003_A constant DA = DB;
+    I003_A constant DB = DC;
+    I003_A constant DC = DD;
+    I003_A constant DD = DE;
+    I003_A constant DE = DF;
+    I003_A constant DF = DG;
+    I003_A constant DG = DH;
+    I003_A constant DH = DI;
+    I003_A constant DI = DJ;
+    I003_A constant DJ = DK;
+    I003_A constant DK = DL;
+    I003_A constant DL = DM;
+    I003_A constant DM = DN;
+    I003_A constant DN = DO;
+    I003_A constant DO = DP;
+    I003_A constant DP = DQ;
+    I003_A constant DQ = DR;
+    I003_A constant DR = DS;
+    I003_A constant DS = DT;
+    I003_A constant DT = DU;
+    I003_A constant DU = DV;
+    I003_A constant DV = DW;
+    I003_A constant DW = DX;
+    I003_A constant DX = DY;
+    I003_A constant DY = DZ;
+    I003_A constant DZ = EA;
+    I003_A constant EA = EB;
+    I003_A constant EB = EC;
+    I003_A constant EC = ED;
+    I003_A constant ED = EE;
+    I003_A constant EE = EF;
+    I003_A constant EF = EG;
+    I003_A constant EG = EH;
+    I003_A constant EH = EI;
+    I003_A constant EI = EJ;
+    I003_A constant EJ = EK;
+    I003_A constant EK = EL;
+    I003_A constant EL = EM;
+    I003_A constant EM = EN;
+    I003_A constant EN = EO;
+    I003_A constant EO = EP;
+    I003_A constant EP = EQ;
+    I003_A constant EQ = ER;
+    I003_A constant ER = ES;
+    I003_A constant ES = ET;
+    I003_A constant ET = EU;
+    I003_A constant EU = EV;
+    I003_A constant EV = EW;
+    I003_A constant EW = EX;
+    I003_A constant EX = EY;
+    I003_A constant EY = EZ;
+    I003_A constant EZ = FA;
+    I003_A constant FA = FB;
+    I003_A constant FB = FC;
+    I003_A constant FC = I003_A(0x00);
+
+    constructor() {
+        check();
+    }
+
+    receive() external payable {
+        check();
+    }
+
+    function check() internal pure {
+        assert(address(B) == address(0x00));
+        assert(address(C) == address(0x00));
+        assert(address(D) == address(0x00));
+        assert(address(E) == address(0x00));
+        assert(address(F) == address(0x00));
+        assert(address(G) == address(0x00));
+        assert(address(H) == address(0x00));
+        assert(address(I) == address(0x00));
+        assert(address(J) == address(0x00));
+        assert(address(K) == address(0x00));
+        assert(address(L) == address(0x00));
+        assert(address(M) == address(0x00));
+        assert(address(N) == address(0x00));
+        assert(address(O) == address(0x00));
+        assert(address(P) == address(0x00));
+        assert(address(R) == address(0x00));
+        assert(address(S) == address(0x00));
+        assert(address(T) == address(0x00));
+        assert(address(U) == address(0x00));
+        assert(address(V) == address(0x00));
+        assert(address(W) == address(0x00));
+        assert(address(X) == address(0x00));
+        assert(address(Y) == address(0x00));
+        assert(address(Z) == address(0x00));
+    }
+}

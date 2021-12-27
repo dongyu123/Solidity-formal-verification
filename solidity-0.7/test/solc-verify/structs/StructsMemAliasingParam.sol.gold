@@ -1,0 +1,4 @@
+StructsMemAliasingParam::f: ERROR
+ - test/solc-verify/structs/StructsMemAliasingParam.sol:18:9: Assertion might not hold.
+StructsMemAliasingParam::[implicit_constructor]: OK
+Errors were found by the verifier.

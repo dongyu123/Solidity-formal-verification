@@ -1,0 +1,4 @@
+HelloBlockchain::[constructor]: OK
+HelloBlockchain::SendRequest: OK
+HelloBlockchain::SendResponse: OK
+No errors found.

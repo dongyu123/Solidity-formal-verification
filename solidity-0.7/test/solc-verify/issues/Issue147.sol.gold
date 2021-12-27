@@ -1,0 +1,4 @@
+Thing::[implicit_constructor]: OK
+otherThing::f: OK
+otherThing::[implicit_constructor]: OK
+No errors found.

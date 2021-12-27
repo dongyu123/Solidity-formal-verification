@@ -1,0 +1,4 @@
+test/solc-verify/transactions/Gas.sol:6:23: solc-verify warning: Ignored option 'gas'.
+Gas::g: OK
+Gas::[implicit_constructor]: OK
+No errors found.

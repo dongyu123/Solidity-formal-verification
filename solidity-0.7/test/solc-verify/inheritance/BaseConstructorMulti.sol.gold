@@ -1,0 +1,5 @@
+BCM_A::[constructor]: OK
+BCM_B::[implicit_constructor]: OK
+BaseConstructorMulti::[constructor]: OK
+BaseConstructorMulti::[receive]: OK
+No errors found.

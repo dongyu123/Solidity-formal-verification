@@ -1,0 +1,8 @@
+ItemListing::[constructor]: OK
+ItemListing::BuyItem: OK
+Bazaar::[constructor]: OK
+Bazaar::HasBalance: OK
+Bazaar::UpdateBalance: OK
+Bazaar::ChangeBalance: OK
+Bazaar::ListItem: OK
+No errors found.

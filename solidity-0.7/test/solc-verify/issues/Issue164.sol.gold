@@ -1,0 +1,13 @@
+test/solc-verify/issues/Issue164.sol:22:5: Warning: Function state mutability can be restricted to pure
+test/solc-verify/issues/Issue164.sol:9:9: solc-verify error: Try-catch is not yet supported
+test/solc-verify/issues/Issue164.sol:23:16: solc-verify error: Array slices are not yet supported
+test/solc-verify/issues/Issue164.sol:8:5: solc-verify warning: Errors while translating function body, will be skipped
+test/solc-verify/issues/Issue164.sol:22:5: solc-verify warning: Errors while translating function body, will be skipped
+I164::[implicit_constructor]: OK
+Issue164::f: OK
+Issue164::[implicit_constructor]: OK
+Issue164_derived::f: OK
+Issue164_derived::[implicit_constructor]: OK
+Issue164::trycatch: SKIPPED
+Issue164::arrayslices: SKIPPED
+No errors found.

@@ -1,0 +1,12 @@
+DigitalLocker::[constructor]: OK
+DigitalLocker::BeginReviewProcess: OK
+DigitalLocker::RejectApplication: OK
+DigitalLocker::UploadDocuments: OK
+DigitalLocker::ShareWithThirdParty: OK
+DigitalLocker::AcceptSharingRequest: OK
+DigitalLocker::RejectSharingRequest: OK
+DigitalLocker::RequestLockerAccess: OK
+DigitalLocker::ReleaseLockerAccess: OK
+DigitalLocker::RevokeAccessFromThirdParty: OK
+DigitalLocker::Terminate: OK
+No errors found.

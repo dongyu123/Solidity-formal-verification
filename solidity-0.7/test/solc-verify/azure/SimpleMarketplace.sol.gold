@@ -1,0 +1,5 @@
+SimpleMarketplace::[constructor]: OK
+SimpleMarketplace::MakeOffer: OK
+SimpleMarketplace::Reject: OK
+SimpleMarketplace::AcceptOffer: OK
+No errors found.

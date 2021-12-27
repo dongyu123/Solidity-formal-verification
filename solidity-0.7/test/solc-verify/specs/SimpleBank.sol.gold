@@ -1,0 +1,11 @@
+solc-verify warning: Balance modifications due to gas consumption or miner rewards are not modeled
+test/solc-verify/specs/SimpleBank.sol:7:1: solc-verify warning: Warning(s) while translating annotation for node
+SimpleBank::deposit: OK
+SimpleBank::withdraw_transfer: OK
+SimpleBank::withdraw_call_incorrect: ERROR
+ - test/solc-verify/specs/SimpleBank.sol:27:26: Invariant '__verifier_sum_uint(user_balances) <= address(this).balance' might not hold before external call.
+ - test/solc-verify/specs/SimpleBank.sol:23:5: Invariant '__verifier_sum_uint(user_balances) <= address(this).balance' might not hold at end of function.
+SimpleBank::withdraw_call_correct: OK
+SimpleBank::[implicit_constructor]: OK
+SimpleBank::[receive_ether_selfdestruct]: OK
+Errors were found by the verifier.

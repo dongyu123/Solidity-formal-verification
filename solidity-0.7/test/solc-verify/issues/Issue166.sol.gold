@@ -1,0 +1,4 @@
+test/solc-verify/issues/Issue166.sol:13:5: Warning: Unused local variable.
+Test::test: OK
+Test::[implicit_constructor]: OK
+No errors found.

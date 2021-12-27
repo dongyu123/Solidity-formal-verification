@@ -1,0 +1,7 @@
+solc-verify warning: Balance modifications due to gas consumption or miner rewards are not modeled
+ModifiesIdx::f: OK
+ModifiesIdx::g: OK
+ModifiesIdx::g_incorrect: ERROR
+ - test/solc-verify/specs/ModifiesIdx.sol:35:5: Function might modify 'xs' illegally
+ModifiesIdx::[implicit_constructor]: OK
+Errors were found by the verifier.

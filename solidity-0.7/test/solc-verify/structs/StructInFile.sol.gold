@@ -1,0 +1,5 @@
+C::set_x: OK
+C::set_y: OK
+C::set_z: OK
+C::[implicit_constructor]: OK
+No errors found.
